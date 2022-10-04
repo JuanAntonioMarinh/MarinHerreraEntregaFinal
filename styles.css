@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainHeader{
+    height: 100vh;
+    width: 100%;
+    background-color: #1f1d1d;
+}
+
+
+.introduction {
+    padding: 50px;
+    color: #31d1bc;
+}
+
+
+
+/* PONG STYLES */
+
+#gameContainer{
+    text-align: center;
+    margin: 20px;
+}
+
+#gameBoard{
+    border: 3px solid;
+}
+
+#scoreText{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+}
+
+#resetBtn{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
