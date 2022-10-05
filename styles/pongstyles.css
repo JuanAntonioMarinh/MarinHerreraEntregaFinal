@@ -1,25 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.mainHeader{
-    height: 100vh;
-    width: 100%;
-    background-color: #1f1d1d;
-}
-
-
-.introduction {
-    padding: 50px;
-    color: #31d1bc;
-}
-
-
-
-/* PONG STYLES */
 
 #gameContainer{
     text-align: center;
