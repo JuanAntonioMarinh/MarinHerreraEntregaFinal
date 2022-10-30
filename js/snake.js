@@ -58,6 +58,24 @@ function clearBoard(){
 };
 
 function createFood(){
+    
+    let overlap = 1;
+    let foodTry = "" + foodX + foodY;
+    let snakeTry = [];
+
+    for(let i=0; i<snake.length; i++){
+        snakeTry[i] = "" + snake[i]["x"] + snake[i]["y"];
+    }
+
+    while(overlap){
+        if(snakeTry.includes(foodTry)){
+            foodX = randomFood(0, gameWidth - unitSize);
+            foodY = randomFood(0, gameWidth - unitSize);
+            foodTry = "" + foodX + foodY;
+        } else {
+            overlap = 0;
+        }
+    }
     function randomFood(min, max){
         const randNum = Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize;
         return randNum;
